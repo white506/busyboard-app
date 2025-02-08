@@ -1,0 +1,30 @@
+@use '@/app.scss' as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  min-width: 140px;
+  text-align: center;
+  font-weight: 500;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  pointer-events: auto;
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-main-hover);
+  }
+
+  &:disabled {
+    background: var(--color-background-disable);
+    cursor: not-allowed;
+  }
+}
+

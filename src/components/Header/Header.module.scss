@@ -1,0 +1,98 @@
+@use '@/app.scss' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 86px;
+  width: 100%;
+  border: 0.5px solid var(--color-gray-light);
+  background-color: var(--color-white);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+  }
+
+  &__logo {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-black);
+    transition: color ease 0.3s;
+
+    &:hover {
+      color: var(--color-gray);
+    }
+  }
+
+  &__navWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 60px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__menuItem {
+    font-size: 16px;
+    color: var(--color-black);
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color ease 0.3s;
+
+    &:hover {
+      color: var(--color-main);
+    }
+
+    &--active {
+      color: var(--color-main);
+
+      &:hover {
+        color: var(--color-main);
+      }
+    }
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+    cursor: pointer;
+
+    &:hover {
+      .header__accountName {
+        color: var(--color-gray);
+      }
+
+      .header__accountIcon {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__accountName {
+    font-size: 18px;
+    color: var(--color-black);
+    transition: color ease 0.3s;
+  }
+
+  &__accountIcon {
+    width: 46px;
+    height: 46px;
+    transition: transform ease 0.3s;
+  }
+}

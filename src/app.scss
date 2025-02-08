@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500,600&display=swap');
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy-SemiBold&display=swap');
+
+:root {
+  --color-black: #35373a;
+  --color-gray: #8496af;
+  --color-gray-light: #dce7f1;
+  --color-white: #ffffff;
+  --color-main: #429eff;
+  --color-main-hover: #007AFF;
+  --color-blue-light: #eaf5ff;
+  --color-background: #f6f7fb;
+  --color-background-disable: rgba(2, 11, 20, 0.75); 
+  --color-green: #1ab889;
+  --color-orange: #ffaa5b;
+  --color-red: #ff4d4f;
+}
+
