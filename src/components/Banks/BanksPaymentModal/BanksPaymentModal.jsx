@@ -107,7 +107,7 @@ const BanksPaymentModal = ({
       };
   
       const response = await fetch(
-        'http://busyboard-test.ru/api/v1/bank/operations/transfer-to-cashbox/',
+        'https://busyboard-test.ru/api/v1/bank/operations/transfer-to-cashbox/',
         {
           method: 'POST',
           headers: {
