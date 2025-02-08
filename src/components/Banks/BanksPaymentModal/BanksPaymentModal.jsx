@@ -346,7 +346,7 @@ BanksPaymentModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
   amount: PropTypes.number.isRequired,
-  idBankOperation: PropTypes.number.isRequired, // Добавляем типизацию
+  idBankOperation: PropTypes.number.isRequired, 
 };
 
 export default BanksPaymentModal;
